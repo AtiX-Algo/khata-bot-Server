@@ -20,7 +20,7 @@ if (!fs.existsSync(UPLOADS_DIR)) {
 
 /* ----------------- middleware ----------------- */
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://your-frontend-deploy-url.com'], // update frontend URL
+  origin: ['http://localhost:5173', 'https://khata-bot.web.app/'], // update frontend URL
 }));
 app.use(express.json());
 app.use('/uploads', express.static(UPLOADS_DIR));
